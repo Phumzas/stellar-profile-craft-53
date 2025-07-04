@@ -1,73 +1,79 @@
-# Welcome to your Lovable project
+Welcome to Phumza Sotyantya's Portfolio Website, a showcase of AI-powered applications, innovative software projects, and IT support experience. This portfolio highlights Phumza’s dedication to building accessible and impactful technology solutions with a strong focus on AI/ML, web development, and educational tools.
 
-## Project info
+🌟 About
+Phumza Melinda Sotyantya
+Aspiring Software Developer & IT Specialist
 
-**URL**: https://lovable.dev/projects/f7f86906-0c63-4d47-91dd-7d808f3cd71c
+Passionate about:
 
-## How can I edit this code?
+Building impactful applications that solve real-world problems
 
-There are several ways of editing your application.
+Leveraging AI/ML technologies to create intelligent, user-friendly solutions
 
-**Use Lovable**
+Empowering students and individuals through accessible digital platforms
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/f7f86906-0c63-4d47-91dd-7d808f3cd71c) and start prompting.
+🚀 Featured Projects
+🎓 Specific Sector AI Prototype
+Developed an AI prototype focused on the education sector as part of The Elements team project.
 
-Changes made via Lovable will be committed automatically to this repo.
+Tech Stack:
+HTML CSS JavaScript Python
 
-**Use your preferred IDE**
+🖼️ Image Content Generator
+An AI-powered image content generator built using Gradio and Hugging Face Spaces to create dynamic visual content.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Tech Stack:
+Python Gradio Hugging Face
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Live Demo
 
-Follow these steps:
+📝 PS Resume Maker
+An AI-driven resume builder that generates ATS-friendly CVs with smart, professional templates.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Tech Stack:
+AI/ML Resume Templates ATS Optimization
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+💬 AI Concept Chatbot
+A conversational AI chatbot built on Botpress for interactive learning experiences.
 
-# Step 3: Install the necessary dependencies.
-npm i
+Tech Stack:
+Botpress Conversational AI Interactive Learning
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Try Chatbot
 
-**Edit a file directly in GitHub**
+📚 Professional Experience
+IT Support Associate
+CAPACITI | May 2024 – Present
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Practical experience with Python-based media tools
 
-**Use GitHub Codespaces**
+Completed certified ML courses via Coursera
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Peer Advisor
+Boston City College | Jan 2024 – Jun 2024
 
-## What technologies are used for this project?
+Assisted students in navigating online learning platforms
 
-This project is built with:
+Provided academic support and peer mentoring
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+🎓 Education
+Diploma in Systems Development
+Boston City Campus | 2021 – 2024
 
-## How can I deploy this project?
+🛠️ Technical Skills
+Programming & Web Development: Python, Java, JavaScript, HTML, CSS, React, Node.js
 
-Simply open [Lovable](https://lovable.dev/projects/f7f86906-0c63-4d47-91dd-7d808f3cd71c) and click on Share -> Publish.
+AI/ML: Machine Learning, Automation, Conversational AI
 
-## Can I connect a custom domain to my Lovable project?
+Systems & Tools: Online Learning Platforms, Problem Solving, IT Support
 
-Yes, you can!
+🤝 Let's Connect
+Email: phumzamelinda@gmail.com
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+LinkedIn: Phumza Sotyantya
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+GitHub: View My GitHub
+
+Location: Gqeberha, Eastern Cape, South Africa
+
+phumza-portfolio-pzdp6kmq8-melinda-pss-projects.vercel.app
