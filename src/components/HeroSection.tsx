@@ -47,7 +47,7 @@ export const HeroSection = () => {
               </a>
             </Button>
             <Button variant="ghost" size="sm" asChild className="hover:text-primary">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/Phumzas" target="_blank" rel="noopener noreferrer">
                 <Github className="h-5 w-5" />
               </a>
             </Button>

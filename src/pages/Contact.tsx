@@ -23,7 +23,7 @@ const contactInfo = [
     icon: Github,
     label: "GitHub",
     value: "View My GitHub",
-    href: "https://github.com"
+    href: "https://github.com/Phumzas"
   },
   {
     icon: MapPin,
@@ -98,7 +98,7 @@ const Contact = () => {
                   </a>
                 </Button>
                 <Button variant="outline" size="lg" asChild>
-                  <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/Phumzas" target="_blank" rel="noopener noreferrer">
                     <Github className="w-5 h-5 mr-2" />
                     GitHub
                   </a>

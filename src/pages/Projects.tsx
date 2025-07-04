@@ -11,7 +11,7 @@ const projects = [
     image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
     technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "Redis"],
     liveUrl: "https://example-ecommerce.com",
-    githubUrl: "https://github.com/example/ecommerce",
+    githubUrl: "https://github.com/Phumzas/ecommerce",
     featured: true
   },
   {
@@ -20,7 +20,7 @@ const projects = [
     image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop",
     technologies: ["Vue.js", "Express", "MongoDB", "Socket.io", "Tailwind"],
     liveUrl: "https://example-taskapp.com",
-    githubUrl: "https://github.com/example/taskapp",
+    githubUrl: "https://github.com/Phumzas/taskapp",
     featured: true
   },
   {
@@ -29,7 +29,7 @@ const projects = [
     image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop",
     technologies: ["Python", "Flask", "D3.js", "Chart.js", "API Integration"],
     liveUrl: "https://example-weather.com",
-    githubUrl: "https://github.com/example/weather",
+    githubUrl: "https://github.com/Phumzas/weather",
     featured: true
   }
 ];
@@ -108,7 +108,7 @@ const Projects = () => {
             Want to see more of my work?
           </p>
           <Button variant="outline" size="lg" asChild>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/Phumzas" target="_blank" rel="noopener noreferrer">
               <Github className="w-4 h-4 mr-2" />
               View All Projects on GitHub
             </a>
