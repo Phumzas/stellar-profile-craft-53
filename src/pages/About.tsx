@@ -1,38 +1,60 @@
 
-import { Code, Database, Globe, Smartphone, Server, Palette } from "lucide-react";
+import { Code, Database, Globe, Smartphone, Server, Palette, Users, BookOpen, Monitor } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
 const skills = [
   {
-    category: "Frontend Development",
-    icon: Globe,
-    skills: ["React", "Vue.js", "TypeScript", "Tailwind CSS", "Next.js", "Angular"]
-  },
-  {
-    category: "Backend Development", 
-    icon: Server,
-    skills: ["Node.js", "Python", "Express", "Django", "PostgreSQL", "MongoDB"]
-  },
-  {
-    category: "Mobile Development",
-    icon: Smartphone,
-    skills: ["React Native", "Flutter", "iOS", "Android", "Expo", "Progressive Web Apps"]
-  },
-  {
-    category: "Database & Cloud",
-    icon: Database,
-    skills: ["PostgreSQL", "MongoDB", "Redis", "AWS", "Docker", "Firebase"]
-  },
-  {
-    category: "Tools & Languages",
+    category: "Programming & Development",
     icon: Code,
-    skills: ["JavaScript", "Python", "Java", "Git", "Linux", "DevOps"]
+    skills: ["Python", "Java", "JavaScript", "AI/ML", "Machine Learning", "Automation"]
   },
   {
-    category: "Design & UX",
-    icon: Palette,
-    skills: ["Figma", "Adobe XD", "UI/UX Design", "Responsive Design", "Accessibility"]
+    category: "Technical Skills", 
+    icon: Monitor,
+    skills: ["Computer Literacy", "Problem Solving", "Systems Development", "Online Learning Platforms"]
+  },
+  {
+    category: "Soft Skills",
+    icon: Users,
+    skills: ["Interpersonal Skills", "Teamwork", "Communication", "Time Management"]
+  },
+  {
+    category: "Languages",
+    icon: Globe,
+    skills: ["English", "isiXhosa"]
+  },
+  {
+    category: "Education & Support",
+    icon: BookOpen,
+    skills: ["Academic Guidance", "Student Support", "Peer Mentoring", "Digital Literacy"]
+  },
+  {
+    category: "Web Technologies",
+    icon: Database,
+    skills: ["React", "Node.js", "HTML/CSS", "Responsive Design", "Modern Web Development"]
+  }
+];
+
+const experience = [
+  {
+    role: "IT Support Associate",
+    company: "CAPACITI | Gqeberha, Eastern Cape",
+    period: "May 2024 - Present",
+    achievements: [
+      "Gained practical experience building Python-based medias",
+      "Completed certified online courses in ML through Coursera, enhancing technical problem-solving skills and automation knowledge"
+    ]
+  },
+  {
+    role: "Peer Advisor",
+    company: "Boston City College | East London, Eastern Cape", 
+    period: "January 2024 - June 2024",
+    achievements: [
+      "Assisted peers become familiar with online learning platforms, offering one-on-one guidance and troubleshooting assistance",
+      "Provided free academic support to fellow students assisting with coursework and study strategies",
+      "Fostered a supportive learning environment, improving digital literacy and academic confidence among students"
+    ]
   }
 ];
 
@@ -45,14 +67,14 @@ const About = () => {
             About <span className="text-gradient">Me</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Passionate software engineer with a drive for creating meaningful digital experiences
+            IT Support Associate and systems development graduate passionate about creating accessible tech solutions
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 mb-16">
           <div className="space-y-6">
             <div className="aspect-square max-w-md mx-auto lg:mx-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl flex items-center justify-center">
-              <div className="text-6xl text-primary font-bold">PS</div>
+              <div className="text-6xl text-primary font-bold">PMS</div>
             </div>
           </div>
 
@@ -61,18 +83,18 @@ const About = () => {
               <h2 className="text-3xl font-bold mb-4">Professional Journey</h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  I'm a dedicated software engineer with a passion for creating innovative digital solutions 
-                  that solve real-world problems. My journey in technology began with a curiosity about how 
-                  things work and evolved into a comprehensive skill set spanning full-stack development.
+                  I'm an aspiring software developer with experience as an IT Support Associate and 
+                  systems development graduate. My passion lies in creating impactful applications 
+                  and providing technical solutions that make technology more accessible to everyone.
                 </p>
                 <p>
-                  With experience in modern web technologies, mobile development, and cloud solutions, 
-                  I bring a holistic approach to every project. I believe in writing clean, maintainable 
-                  code and creating user experiences that are both functional and delightful.
+                  With hands-on experience in online learning systems and AI/ML technologies, I bring 
+                  a unique perspective to software development. I've gained practical skills in Python, 
+                  machine learning, and automation while helping students navigate digital learning environments.
                 </p>
                 <p>
-                  When I'm not coding, you'll find me exploring new technologies, contributing to 
-                  open-source projects, or sharing knowledge with the developer community.
+                  My background in peer mentoring and academic support has taught me the importance of 
+                  user-centered design and accessible technology solutions that truly serve people's needs.
                 </p>
               </div>
             </div>
@@ -82,23 +104,79 @@ const About = () => {
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Build scalable applications that positively impact users' lives
+                  Build impactful applications that solve real-world problems
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Continuously learn and adapt to emerging technologies
+                  Leverage AI/ML technologies to create intelligent solutions
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Contribute to innovative projects in a collaborative environment
+                  Continue learning and growing in software development
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Mentor other developers and give back to the tech community
+                  Empower individuals through accessible technology solutions
                 </li>
               </ul>
             </div>
           </div>
+        </div>
+
+        {/* Experience Section */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold text-center mb-12">
+            Professional <span className="text-gradient">Experience</span>
+          </h2>
+          
+          <div className="space-y-6">
+            {experience.map((exp, index) => (
+              <Card key={index} className="hover:shadow-lg transition-all duration-300">
+                <CardHeader>
+                  <div className="flex justify-between items-start flex-wrap gap-2">
+                    <div>
+                      <CardTitle className="text-xl">{exp.role}</CardTitle>
+                      <CardDescription className="text-base font-medium text-primary">
+                        {exp.company}
+                      </CardDescription>
+                    </div>
+                    <Badge variant="outline" className="text-sm">
+                      {exp.period}
+                    </Badge>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2">
+                    {exp.achievements.map((achievement, idx) => (
+                      <li key={idx} className="flex items-start text-muted-foreground">
+                        <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        {achievement}
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        {/* Education Section */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold text-center mb-12">
+            <span className="text-gradient">Education</span>
+          </h2>
+          
+          <Card className="hover:shadow-lg transition-all duration-300">
+            <CardHeader className="text-center">
+              <CardTitle className="text-xl">Diploma in Systems Development</CardTitle>
+              <CardDescription className="text-base font-medium text-primary">
+                Boston City Campus | East London, Eastern Cape
+              </CardDescription>
+              <Badge variant="outline" className="w-fit mx-auto mt-2">
+                2021-2024
+              </Badge>
+            </CardHeader>
+          </Card>
         </div>
 
         <div>

@@ -10,8 +10,8 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "phumza.sotyantya@email.com",
-    href: "mailto:phumza.sotyantya@email.com"
+    value: "phumzamelinda@gmail.com",
+    href: "mailto:phumzamelinda@gmail.com"
   },
   {
     icon: Linkedin,
@@ -22,13 +22,13 @@ const contactInfo = [
   {
     icon: Github,
     label: "GitHub",
-    value: "github.com/phumza",
+    value: "View My GitHub",
     href: "https://github.com"
   },
   {
     icon: MapPin,
     label: "Location",
-    value: "South Africa",
+    value: "Gqeberha, Eastern Cape, South Africa",
     href: null
   }
 ];
@@ -42,8 +42,8 @@ const Contact = () => {
             Let's <span className="text-gradient">Connect</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            I'm always interested in new opportunities and collaborations. 
-            Let's discuss how we can work together to bring your ideas to life.
+            I'm passionate about creating impactful applications and always interested in new opportunities 
+            and collaborations. Let's discuss how we can work together to build something amazing.
           </p>
         </div>
 
@@ -53,8 +53,9 @@ const Contact = () => {
             <div>
               <h2 className="text-2xl font-bold mb-6">Get In Touch</h2>
               <p className="text-muted-foreground mb-8">
-                Whether you have a project in mind, want to collaborate, or just want to say hello, 
-                I'd love to hear from you. Feel free to reach out through any of these channels.
+                Whether you have a project in mind, want to collaborate on AI/ML solutions, 
+                need IT support, or just want to connect with a fellow developer, I'd love to hear from you. 
+                Feel free to reach out through any of these channels.
               </p>
             </div>
 
@@ -112,7 +113,8 @@ const Contact = () => {
               <CardHeader>
                 <CardTitle>Send a Message</CardTitle>
                 <CardDescription>
-                  Fill out the form below and I'll get back to you as soon as possible.
+                  Fill out the form below and I'll get back to you as soon as possible. 
+                  Whether it's about collaboration, projects, or just to say hello!
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">

@@ -12,18 +12,19 @@ export const HeroSection = () => {
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            <span className="text-gradient">Phumza</span>
+            <span className="text-gradient">Phumza Melinda</span>
             <br />
             <span className="text-foreground">Sotyantya</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Full-Stack Developer & Software Engineer
+            Aspiring Software Developer & IT Support Associate
           </p>
           
           <p className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto">
-            Passionate about creating innovative digital solutions that bridge technology 
-            and user experience. Specializing in modern web development and scalable applications.
+            Passionate about building impactful applications and providing technical solutions. 
+            Experienced in online learning systems, AI/ML technologies, and helping students succeed 
+            through accessible technology solutions.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
