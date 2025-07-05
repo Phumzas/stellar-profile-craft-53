@@ -1,3 +1,4 @@
+
 import { ExternalLink, Github, Code2, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -9,8 +10,8 @@ const projects = [
     description: "Developed an AI prototype focused on the education sector as part of 'The Elements' team project. This innovative solution demonstrates AI applications in educational contexts.",
     videoUrl: "https://www.youtube.com/embed/HfF3JSBga3k",
     technologies: ["HTML", "CSS", "JavaScript", "Python"],
-    liveUrl: null,
-    githubUrl: null,
+    liveUrl: "https://ai-accessebility-project-34.vercel.app/",
+    githubUrl: "https://github.com/Lisekho3/ai-accessebility-project-34",
     featured: true,
     hasVideo: true
   },
@@ -20,7 +21,7 @@ const projects = [
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop",
     technologies: ["Python", "Gradio", "Hugging Face"],
     liveUrl: "https://huggingface.co/spaces/leo11000/content",
-    githubUrl: null,
+    githubUrl: "https://github.com/Phumzas",
     featured: true
   },
   {
@@ -28,8 +29,8 @@ const projects = [
     description: "AI-driven resume builder that generates ATS-friendly CVs with smart templates. Designed to help job seekers create professional resumes optimized for applicant tracking systems.",
     image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=600&h=400&fit=crop",
     technologies: ["AI/ML", "Resume Templates", "ATS Optimization"],
-    liveUrl: null,
-    githubUrl: null,
+    liveUrl: "https://lovable.dev/projects/2c43c0d5-2834-40bd-bb53-97b0bb219c11",
+    githubUrl: "https://github.com/Phumzas",
     featured: true
   },
   {
@@ -38,7 +39,7 @@ const projects = [
     image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=600&h=400&fit=crop",
     technologies: ["Botpress", "Conversational AI", "Interactive Learning"],
     liveUrl: "https://cdn.botpress.cloud/webchat/v3.0/shareable.html?configUrl=https://files.bpcontent.cloud/2025/05/17/03/20250517031541-XWVYDKY6.json",
-    githubUrl: null,
+    githubUrl: "https://github.com/Phumzas",
     featured: true
   }
 ];

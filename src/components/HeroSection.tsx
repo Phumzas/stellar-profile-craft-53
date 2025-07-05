@@ -34,9 +34,11 @@ export const HeroSection = () => {
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
             </Button>
-            <Button variant="outline" size="lg" className="group">
-              <Download className="mr-2 h-4 w-4 transition-transform group-hover:scale-110" />
-              Download Resume
+            <Button variant="outline" size="lg" className="group" asChild>
+              <a href="https://drive.google.com/file/d/1_kTtUQ1nO_w6LehcZkyblocN3jnp_Ni7/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                <Download className="mr-2 h-4 w-4 transition-transform group-hover:scale-110" />
+                Download Resume
+              </a>
             </Button>
           </div>
 

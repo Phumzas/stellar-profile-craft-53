@@ -73,8 +73,12 @@ const About = () => {
 
         <div className="grid lg:grid-cols-2 gap-12 mb-16">
           <div className="space-y-6">
-            <div className="aspect-square max-w-md mx-auto lg:mx-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl flex items-center justify-center">
-              <div className="text-6xl text-primary font-bold">PMS</div>
+            <div className="aspect-square max-w-md mx-auto lg:mx-0 rounded-2xl overflow-hidden shadow-lg">
+              <img
+                src="/lovable-uploads/7a84bf5e-86bd-48ac-bf10-238919a6b818.png"
+                alt="Phumza Melinda Sotyantya - Resume"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
 
