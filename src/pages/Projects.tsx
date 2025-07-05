@@ -1,5 +1,4 @@
-
-import { ExternalLink, Github, Code2, Youtube } from "lucide-react";
+import { ExternalLink, Github, Code2, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -140,12 +139,20 @@ const Projects = () => {
           <p className="text-muted-foreground mb-6">
             Want to see more of my work and connect?
           </p>
-          <Button variant="outline" size="lg" asChild>
-            <a href="https://github.com/Phumzas" target="_blank" rel="noopener noreferrer">
-              <Github className="w-4 h-4 mr-2" />
-              View My GitHub Profile
-            </a>
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Button variant="outline" size="lg" asChild>
+              <a href="https://github.com/Phumzas" target="_blank" rel="noopener noreferrer">
+                <Github className="w-4 h-4 mr-2" />
+                View My GitHub Profile
+              </a>
+            </Button>
+            <Button variant="default" size="lg" asChild>
+              <a href="https://drive.google.com/file/d/1_kTtUQ1nO_w6LehcZkyblocN3jnp_Ni7/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                <Download className="w-4 h-4 mr-2" />
+                Download My Resume
+              </a>
+            </Button>
+          </div>
         </div>
       </div>
     </div>
