@@ -73,11 +73,11 @@ const About = () => {
 
         <div className="grid lg:grid-cols-2 gap-12 mb-16">
           <div className="space-y-6">
-            <div className="aspect-square max-w-md mx-auto lg:mx-0 rounded-2xl overflow-hidden shadow-lg">
+            <div className="max-w-md mx-auto lg:mx-0 rounded-2xl overflow-hidden shadow-lg bg-white p-8 flex items-center justify-center">
               <img
-                src="/lovable-uploads/7a84bf5e-86bd-48ac-bf10-238919a6b818.png"
-                alt="Phumza Melinda Sotyantya - Resume"
-                className="w-full h-full object-cover"
+                src="/lovable-uploads/4222a74a-5333-4cc8-b05c-250cd4d0b077.png"
+                alt="P.S. Logo"
+                className="w-48 h-auto object-contain"
               />
             </div>
           </div>

@@ -6,6 +6,16 @@ import { Badge } from "@/components/ui/badge";
 
 const projects = [
   {
+    title: "Accessibility Voice AI (Group Project)",
+    description: "A collaborative Accessibility Voice AI project focused on improving voice-assisted technology for people with disabilities. This project demonstrates the power of AI in making digital spaces more accessible.",
+    videoUrl: "https://www.youtube.com/embed/57-Mm3HstZc",
+    technologies: ["AI/ML", "Voice Recognition", "Accessibility", "Python", "JavaScript"],
+    liveUrl: null,
+    githubUrl: "https://github.com/Lisekho3/ai-accessebility-project-34",
+    featured: true,
+    hasVideo: true
+  },
+  {
     title: "Specific Sector AI Prototype",
     description: "Developed an AI prototype focused on the education sector as part of 'The Elements' team project. This innovative solution demonstrates AI applications in educational contexts.",
     videoUrl: "https://www.youtube.com/embed/HfF3JSBga3k",
