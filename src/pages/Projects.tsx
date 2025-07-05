@@ -39,7 +39,7 @@ const projects = [
     description: "AI-driven resume builder that generates ATS-friendly CVs with smart templates. Designed to help job seekers create professional resumes optimized for applicant tracking systems.",
     image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=600&h=400&fit=crop",
     technologies: ["AI/ML", "Resume Templates", "ATS Optimization"],
-    liveUrl: "https://lovable.dev/projects/2c43c0d5-2834-40bd-bb53-97b0bb219c11",
+    liveUrl: "https://crafted-career-resume.lovable.app/",
     githubUrl: "https://github.com/Phumzas",
     featured: true
   },
