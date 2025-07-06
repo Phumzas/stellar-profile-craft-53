@@ -68,8 +68,7 @@ AI/ML: Machine Learning, Automation, Conversational AI
 Systems & Tools: Online Learning Platforms, Problem Solving, IT Support
 
 🤝 Let's Connect
-Email: phumzamelinda@gmail.com
-
+https://profile-portfolio-ps.lovable.app/
 LinkedIn: Phumza Sotyantya
 
 GitHub: View My GitHub
