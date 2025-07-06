@@ -11,52 +11,65 @@ export const HeroSection = () => {
       
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-fade-in">
+          {/* Profile Image */}
+          <div className="flex justify-center mb-8">
+            <div className="relative group">
+              <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-primary/20 shadow-lg hover-scale hover-glow">
+                <img
+                  src="/lovable-uploads/65253e85-ee9e-4fbf-953e-cff7c3775bd3.png"
+                  alt="Phumza Melinda Sotyantya"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+          </div>
+
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
+            <span className="block mb-2">Hi, I'm</span>
             <span className="text-gradient">Phumza Melinda</span>
-            <br />
-            <span className="text-foreground">Sotyantya</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Aspiring Software Developer & IT Support Associate
+            A Front-End Developer & UI/UX Designer passionate about building 
+            <span className="text-primary font-semibold"> lovable digital experiences</span>
           </p>
           
-          <p className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto">
-            Passionate about building impactful applications and providing technical solutions. 
-            Experienced in online learning systems, AI/ML technologies, and helping students succeed 
-            through accessible technology solutions.
+          <p className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+            I create impactful applications and provide technical solutions through 
+            accessible technology, AI/ML innovations, and user-centered design.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button asChild size="lg" className="group">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
+            <Button asChild size="lg" className="group hover-scale hover-glow rounded-full">
               <Link to="/projects">
                 View My Work
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
             </Button>
-            <Button variant="outline" size="lg" className="group" asChild>
-              <a href="https://drive.google.com/file/d/1_kTtUQ1nO_w6LehcZkyblocN3jnp_Ni7/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                <Download className="mr-2 h-4 w-4 transition-transform group-hover:scale-110" />
-                Download Resume
-              </a>
+            <Button variant="outline" size="lg" className="group hover-scale hover-glow rounded-full" asChild>
+              <Link to="/contact">
+                Contact Me
+                <Mail className="ml-2 h-4 w-4 transition-transform group-hover:scale-110" />
+              </Link>
             </Button>
           </div>
 
-          <div className="flex justify-center space-x-6">
-            <Button variant="ghost" size="sm" asChild className="hover:text-primary">
+          <div className="flex justify-center space-x-6 animate-fade-in-up" style={{ animationDelay: '0.9s' }}>
+            <Button variant="ghost" size="sm" asChild className="hover-scale hover-glow rounded-full">
               <a href="https://za.linkedin.com/in/phumza-sotyantya-44929427a" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="h-5 w-5" />
               </a>
             </Button>
-            <Button variant="ghost" size="sm" asChild className="hover:text-primary">
+            <Button variant="ghost" size="sm" asChild className="hover-scale hover-glow rounded-full">
               <a href="https://github.com/Phumzas" target="_blank" rel="noopener noreferrer">
                 <Github className="h-5 w-5" />
               </a>
             </Button>
-            <Button variant="ghost" size="sm" asChild className="hover:text-primary">
-              <Link to="/contact">
-                <Mail className="h-5 w-5" />
-              </Link>
+            <Button variant="ghost" size="sm" asChild className="hover-scale hover-glow rounded-full">
+              <a href="https://drive.google.com/file/d/1_kTtUQ1nO_w6LehcZkyblocN3jnp_Ni7/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                <Download className="h-5 w-5" />
+              </a>
             </Button>
           </div>
         </div>

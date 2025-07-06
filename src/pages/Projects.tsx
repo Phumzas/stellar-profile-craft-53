@@ -1,5 +1,5 @@
 
-import { ExternalLink, Github, Code2, Download } from "lucide-react";
+import { ExternalLink, Github, Code2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -63,20 +63,20 @@ const Projects = () => {
             Featured <span className="text-gradient">Projects</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            A showcase of my AI and software development projects, demonstrating expertise in 
+            A showcase of my <span className="text-primary font-semibold">AI and software development projects</span>, demonstrating expertise in 
             machine learning, web development, and innovative problem-solving.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <Card key={index} className="group hover:shadow-xl transition-all duration-500 hover:-translate-y-2 animate-fade-in" style={{ animationDelay: `${0.1 * index}s` }}>
-              <div className="relative overflow-hidden rounded-t-lg">
+            <Card key={index} className="group card-hover hover-glow animate-fade-in-up rounded-2xl border-0 shadow-lg bg-card/50 backdrop-blur-sm" style={{ animationDelay: `${0.1 * index}s` }}>
+              <div className="relative overflow-hidden rounded-t-2xl">
                 {project.hasVideo ? (
                   <div className="w-full h-48 group-hover:scale-105 transition-transform duration-500">
                     <iframe
                       src={project.videoUrl}
-                      className="w-full h-full"
+                      className="w-full h-full rounded-t-2xl"
                       frameBorder="0"
                       allowFullScreen
                       title={project.title}
@@ -98,7 +98,7 @@ const Projects = () => {
                 <div className="flex items-center justify-between">
                   <CardTitle className="text-xl group-hover:text-primary transition-colors duration-200">{project.title}</CardTitle>
                   {project.featured && (
-                    <Badge variant="secondary" className="text-xs group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-200">
+                    <Badge variant="secondary" className="text-xs group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-200 rounded-full">
                       <Code2 className="w-3 h-3 mr-1" />
                       Featured
                     </Badge>
@@ -112,7 +112,7 @@ const Projects = () => {
               <CardContent className="space-y-4">
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech) => (
-                    <Badge key={tech} variant="outline" className="text-xs hover:bg-primary hover:text-primary-foreground transition-colors duration-200 cursor-default">
+                    <Badge key={tech} variant="outline" className="text-xs hover:bg-primary hover:text-primary-foreground transition-colors duration-200 cursor-default rounded-full">
                       {tech}
                     </Badge>
                   ))}
@@ -120,7 +120,7 @@ const Projects = () => {
 
                 <div className="flex gap-3">
                   {project.liveUrl && (
-                    <Button variant="default" size="sm" asChild className="flex-1 hover:scale-105 transition-transform duration-200">
+                    <Button variant="default" size="sm" asChild className="flex-1 hover-scale hover-glow rounded-full">
                       <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="w-4 h-4 mr-2" />
                         {project.title.includes("Chatbot") ? "Try Chatbot" : "Live Demo"}
@@ -128,7 +128,7 @@ const Projects = () => {
                     </Button>
                   )}
                   {project.githubUrl && (
-                    <Button variant="outline" size="sm" asChild className={`${project.liveUrl ? "flex-1" : "w-full"} hover:scale-105 transition-transform duration-200`}>
+                    <Button variant="outline" size="sm" asChild className={`${project.liveUrl ? "flex-1" : "w-full"} hover-scale hover-glow rounded-full`}>
                       <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                         <Github className="w-4 h-4 mr-2" />
                         Code
@@ -151,16 +151,10 @@ const Projects = () => {
             Want to see more of my work and connect?
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button variant="outline" size="lg" asChild className="hover:scale-105 transition-transform duration-200">
+            <Button variant="outline" size="lg" asChild className="hover-scale hover-glow rounded-full">
               <a href="https://github.com/Phumzas" target="_blank" rel="noopener noreferrer">
                 <Github className="w-4 h-4 mr-2" />
                 View My GitHub Profile
-              </a>
-            </Button>
-            <Button variant="default" size="lg" asChild className="hover:scale-105 transition-transform duration-200">
-              <a href="https://drive.google.com/file/d/1_kTtUQ1nO_w6LehcZkyblocN3jnp_Ni7/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                <Download className="w-4 h-4 mr-2" />
-                Download My Resume
               </a>
             </Button>
           </div>

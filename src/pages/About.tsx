@@ -1,4 +1,5 @@
-import { Code, Database, Globe, Smartphone, Server, Palette, Users, BookOpen, Monitor } from "lucide-react";
+
+import { Code, Database, Globe, Users, BookOpen, Monitor, Heart, Lightbulb, Target, Zap } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
@@ -57,6 +58,13 @@ const experience = [
   }
 ];
 
+const personalityTraits = [
+  { icon: Heart, title: "Passionate", description: "About creating meaningful digital experiences" },
+  { icon: Lightbulb, title: "Innovative", description: "Always exploring new technologies and solutions" },
+  { icon: Target, title: "Goal-Oriented", description: "Focused on delivering impactful results" },
+  { icon: Zap, title: "Energetic", description: "Bringing enthusiasm to every project" }
+];
+
 const About = () => {
   return (
     <div className="min-h-screen py-20">
@@ -66,7 +74,8 @@ const About = () => {
             About <span className="text-gradient">Me</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            IT Support Associate and systems development graduate passionate about creating accessible tech solutions
+            IT Support Associate and systems development graduate passionate about creating 
+            <span className="text-primary font-semibold"> accessible tech solutions</span>
           </p>
         </div>
 
@@ -75,7 +84,7 @@ const About = () => {
             {/* Avatar Section */}
             <div className="flex justify-center lg:justify-start mb-8">
               <div className="relative group">
-                <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-primary/20 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-primary/20 shadow-lg hover-scale hover-glow">
                   <img
                     src="/lovable-uploads/65253e85-ee9e-4fbf-953e-cff7c3775bd3.png"
                     alt="Phumza Melinda Sotyantya"
@@ -85,6 +94,21 @@ const About = () => {
                 <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
             </div>
+
+            {/* Personality Traits */}
+            <div className="grid grid-cols-2 gap-4">
+              {personalityTraits.map((trait, index) => (
+                <Card key={index} className="text-center card-hover hover-glow rounded-2xl border-0 shadow-lg bg-card/50 backdrop-blur-sm">
+                  <CardContent className="p-4">
+                    <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-2">
+                      <trait.icon className="w-5 h-5 text-primary" />
+                    </div>
+                    <h3 className="font-semibold text-sm text-primary">{trait.title}</h3>
+                    <p className="text-xs text-muted-foreground mt-1">{trait.description}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
 
           <div className="space-y-6 animate-fade-in" style={{ animationDelay: '0.4s' }}>
@@ -92,18 +116,18 @@ const About = () => {
               <h2 className="text-3xl font-bold mb-4">Professional Journey</h2>
               <div className="space-y-4 text-muted-foreground">
                 <p className="hover:text-foreground transition-colors duration-300">
-                  I'm an aspiring software developer with experience as an IT Support Associate and 
-                  systems development graduate. My passion lies in creating impactful applications 
+                  I'm an aspiring <span className="text-primary font-semibold">software developer</span> with experience as an IT Support Associate and 
+                  systems development graduate. My passion lies in creating <span className="text-primary font-semibold">impactful applications</span> 
                   and providing technical solutions that make technology more accessible to everyone.
                 </p>
                 <p className="hover:text-foreground transition-colors duration-300">
-                  With hands-on experience in online learning systems and AI/ML technologies, I bring 
+                  With hands-on experience in <span className="text-primary font-semibold">online learning systems</span> and <span className="text-primary font-semibold">AI/ML technologies</span>, I bring 
                   a unique perspective to software development. I've gained practical skills in Python, 
                   machine learning, and automation while helping students navigate digital learning environments.
                 </p>
                 <p className="hover:text-foreground transition-colors duration-300">
                   My background in peer mentoring and academic support has taught me the importance of 
-                  user-centered design and accessible technology solutions that truly serve people's needs.
+                  <span className="text-primary font-semibold"> user-centered design</span> and accessible technology solutions that truly serve people's needs.
                 </p>
               </div>
             </div>
@@ -117,7 +141,7 @@ const About = () => {
                   "Continue learning and growing in software development",
                   "Empower individuals through accessible technology solutions"
                 ].map((objective, index) => (
-                  <li key={index} className="flex items-start group hover:scale-105 transition-transform duration-200" style={{ animationDelay: `${0.1 * index}s` }}>
+                  <li key={index} className="flex items-start group hover-scale" style={{ animationDelay: `${0.1 * index}s` }}>
                     <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0 group-hover:scale-150 transition-transform duration-200"></span>
                     <span className="text-muted-foreground group-hover:text-foreground transition-colors duration-200">{objective}</span>
                   </li>
@@ -135,7 +159,7 @@ const About = () => {
           
           <div className="space-y-6">
             {experience.map((exp, index) => (
-              <Card key={index} className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group" style={{ animationDelay: `${0.1 * index}s` }}>
+              <Card key={index} className="card-hover hover-glow rounded-2xl border-0 shadow-lg bg-card/50 backdrop-blur-sm group" style={{ animationDelay: `${0.1 * index}s` }}>
                 <CardHeader>
                   <div className="flex justify-between items-start flex-wrap gap-2">
                     <div>
@@ -144,7 +168,7 @@ const About = () => {
                         {exp.company}
                       </CardDescription>
                     </div>
-                    <Badge variant="outline" className="text-sm group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-200">
+                    <Badge variant="outline" className="text-sm group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-200 rounded-full">
                       {exp.period}
                     </Badge>
                   </div>
@@ -170,13 +194,13 @@ const About = () => {
             <span className="text-gradient">Education</span>
           </h2>
           
-          <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group">
+          <Card className="card-hover hover-glow rounded-2xl border-0 shadow-lg bg-card/50 backdrop-blur-sm group">
             <CardHeader className="text-center">
               <CardTitle className="text-xl group-hover:text-primary transition-colors duration-200">Diploma in Systems Development</CardTitle>
               <CardDescription className="text-base font-medium text-primary">
                 Boston City Campus | East London, Eastern Cape
               </CardDescription>
-              <Badge variant="outline" className="w-fit mx-auto mt-2 group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-200">
+              <Badge variant="outline" className="w-fit mx-auto mt-2 group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-200 rounded-full">
                 2021-2024
               </Badge>
             </CardHeader>
@@ -190,17 +214,17 @@ const About = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {skills.map((skillGroup, index) => (
-              <Card key={index} className="hover:shadow-lg transition-all duration-300 hover:-translate-y-2 group" style={{ animationDelay: `${0.1 * index}s` }}>
+              <Card key={index} className="card-hover hover-glow rounded-2xl border-0 shadow-lg bg-card/50 backdrop-blur-sm group" style={{ animationDelay: `${0.1 * index}s` }}>
                 <CardHeader className="text-center">
-                  <div className="mx-auto w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
-                    <skillGroup.icon className="w-6 h-6 text-primary group-hover:scale-110 transition-transform duration-200" />
+                  <div className="mx-auto w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mb-4 group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
+                    <skillGroup.icon className="w-6 h-6 text-primary" />
                   </div>
                   <CardTitle className="text-lg group-hover:text-primary transition-colors duration-200">{skillGroup.category}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
                     {skillGroup.skills.map((skill) => (
-                      <Badge key={skill} variant="secondary" className="text-xs hover:bg-primary hover:text-primary-foreground transition-colors duration-200 cursor-default">
+                      <Badge key={skill} variant="secondary" className="text-xs hover:bg-primary hover:text-primary-foreground transition-colors duration-200 cursor-default rounded-full">
                         {skill}
                       </Badge>
                     ))}
