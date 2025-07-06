@@ -31,13 +31,13 @@ export const HeroSection = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            A Front-End Developer & UI/UX Designer passionate about building 
-            <span className="text-primary font-semibold"> lovable digital experiences</span>
+            A Systems Development Graduate and aspiring IT specialist passionate about using
+            <span className="text-primary font-semibold"> digital tools, AI/ML innovations, and user-centered design</span>
           </p>
           
           <p className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
-            I create impactful applications and provide technical solutions through 
-            accessible technology, AI/ML innovations, and user-centered design.
+            I love building digital experiences that are not only functional but also meaningful and delightful to use, 
+            creating impactful, accessible technology solutions.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
