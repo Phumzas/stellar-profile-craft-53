@@ -1,4 +1,3 @@
-
 import { Code, Database, Globe, Smartphone, Server, Palette, Users, BookOpen, Monitor } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -85,15 +84,6 @@ const About = () => {
                 </div>
                 <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
-            </div>
-
-            {/* Logo Section */}
-            <div className="max-w-md mx-auto lg:mx-0 rounded-2xl overflow-hidden shadow-lg bg-white p-8 flex items-center justify-center hover:shadow-xl transition-shadow duration-300">
-              <img
-                src="/lovable-uploads/4222a74a-5333-4cc8-b05c-250cd4d0b077.png"
-                alt="P.S. Logo"
-                className="w-48 h-auto object-contain"
-              />
             </div>
           </div>
 
