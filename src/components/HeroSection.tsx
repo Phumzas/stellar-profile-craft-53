@@ -27,7 +27,7 @@ export const HeroSection = () => {
 
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
             <span className="block mb-2">Hi, I'm</span>
-            <span className="text-gradient">Phumza Melinda</span>
+            <span className="text-gradient">Phumza Melinda Sotyantya</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
@@ -67,7 +67,7 @@ export const HeroSection = () => {
               </a>
             </Button>
             <Button variant="ghost" size="sm" asChild className="hover-scale hover-glow rounded-full">
-              <a href="https://drive.google.com/file/d/1_kTtUQ1nO_w6LehcZkyblocN3jnp_Ni7/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+              <a href="/lovable-uploads/3a5e87cb-d895-4e1f-8964-d731d74d3861.png" download="Phumza_Sotyantya_Resume.png" target="_blank" rel="noopener noreferrer">
                 <Download className="h-5 w-5" />
               </a>
             </Button>

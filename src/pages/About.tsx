@@ -1,4 +1,3 @@
-
 import { Code, Database, Globe, Users, BookOpen, Monitor, Heart, Lightbulb, Target, Zap } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -40,7 +39,7 @@ const experience = [
   {
     role: "IT Support Associate",
     company: "CAPACITI | Gqeberha, Eastern Cape",
-    period: "May 2024 - Present",
+    period: "May 2024 - May 2025",
     achievements: [
       "Gained practical experience building Python-based medias",
       "Completed certified online courses in ML through Coursera, enhancing technical problem-solving skills and automation knowledge"
