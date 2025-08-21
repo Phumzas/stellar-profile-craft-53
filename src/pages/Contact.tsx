@@ -22,8 +22,8 @@ const contactInfo = [
   {
     icon: Github,
     label: "GitHub",
-    value: "View My GitHub",
-    href: "https://github.com/Phumzas"
+    value: "github.com/phumzasotyantya",
+    href: "https://github.com/phumzasotyantya"
   },
   {
     icon: MapPin,
@@ -98,7 +98,7 @@ const Contact = () => {
                   </a>
                 </Button>
                 <Button variant="outline" size="lg" asChild className="hover-scale hover-glow rounded-full">
-                  <a href="https://github.com/Phumzas" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/phumzasotyantya" target="_blank" rel="noopener noreferrer">
                     <Github className="w-5 h-5 mr-2" />
                     GitHub
                   </a>
@@ -107,58 +107,38 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Contact Form */}
+          {/* Professional Summary */}
           <div className="animate-fade-in" style={{ animationDelay: '0.4s' }}>
             <Card className="rounded-2xl border-0 shadow-lg bg-card/50 backdrop-blur-sm">
               <CardHeader>
-                <CardTitle>Send a Message</CardTitle>
+                <CardTitle>Let's Build Something Amazing Together</CardTitle>
                 <CardDescription>
-                  Fill out the form below and I'll get back to you as soon as possible. 
-                  Whether it's about collaboration, projects, or just to say hello!
+                  Ready to collaborate on impactful projects that make a difference
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
-                <form className="space-y-6">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                      <Label htmlFor="firstName">First Name</Label>
-                      <Input id="firstName" placeholder="John" className="rounded-xl focus:ring-primary/20" />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="lastName">Last Name</Label>
-                      <Input id="lastName" placeholder="Doe" className="rounded-xl focus:ring-primary/20" />
-                    </div>
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="email">Email</Label>
-                    <Input id="email" type="email" placeholder="john.doe@example.com" className="rounded-xl focus:ring-primary/20" />
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="subject">Subject</Label>
-                    <Input id="subject" placeholder="Project Collaboration" className="rounded-xl focus:ring-primary/20" />
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="message">Message</Label>
-                    <Textarea 
-                      id="message" 
-                      placeholder="Tell me about your project or how we can work together..."
-                      className="min-h-[120px] rounded-xl focus:ring-primary/20"
-                    />
-                  </div>
-
-                  <Button type="submit" size="lg" className="w-full group hover-scale hover-glow rounded-full">
-                    <Send className="w-4 h-4 mr-2 transition-transform group-hover:translate-x-1" />
-                    Send Message
-                  </Button>
-                </form>
+                <div className="space-y-4">
+                  <h3 className="text-lg font-semibold">What I Bring:</h3>
+                  <ul className="space-y-3">
+                    {[
+                      "Systems Development expertise with hands-on IT support experience",
+                      "AI/ML knowledge with practical Python development skills",
+                      "Passion for creating accessible tech solutions",
+                      "Collaborative mindset with mentorship experience",
+                      "Focus on solving real-world problems through technology"
+                    ].map((point, index) => (
+                      <li key={index} className="flex items-start group hover-scale" style={{ animationDelay: `${0.1 * index}s` }}>
+                        <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0 group-hover:scale-150 transition-transform duration-200"></span>
+                        <span className="text-muted-foreground group-hover:text-foreground transition-colors duration-200">{point}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
                 
                 <div className="text-center pt-4 border-t">
                   <p className="text-sm text-muted-foreground flex items-center justify-center gap-2">
                     <Heart className="w-4 h-4 text-primary" />
-                    I'd love to connect with you!
+                    Looking forward to connecting with you!
                   </p>
                 </div>
               </CardContent>

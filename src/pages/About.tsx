@@ -2,6 +2,7 @@
 import { Code, Database, Globe, Users, BookOpen, Monitor, Heart, Lightbulb, Target, Zap } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { CertificatesSection } from "@/components/CertificatesSection";
 
 const skills = [
   {
@@ -10,14 +11,14 @@ const skills = [
     skills: ["Python", "Java", "JavaScript", "AI/ML", "Machine Learning", "Automation"]
   },
   {
-    category: "Technical Skills", 
-    icon: Monitor,
-    skills: ["Computer Literacy", "Problem Solving", "Systems Development", "Online Learning Platforms"]
+    category: "Web Technologies",
+    icon: Database,
+    skills: ["React", "Node.js", "HTML/CSS", "SQL", "Responsive Design", "Modern Web Development"]
   },
   {
     category: "Soft Skills",
     icon: Users,
-    skills: ["Interpersonal Skills", "Teamwork", "Communication", "Time Management"]
+    skills: ["Communication", "Teamwork", "Time Management", "Mentorship"]
   },
   {
     category: "Languages",
@@ -25,14 +26,14 @@ const skills = [
     skills: ["English", "isiXhosa"]
   },
   {
-    category: "Education & Support",
-    icon: BookOpen,
-    skills: ["Academic Guidance", "Student Support", "Peer Mentoring", "Digital Literacy"]
+    category: "Technical Support",
+    icon: Monitor,
+    skills: ["IT Support", "Digital Platforms", "Tech Troubleshooting", "System Administration"]
   },
   {
-    category: "Web Technologies",
-    icon: Database,
-    skills: ["React", "Node.js", "HTML/CSS", "Responsive Design", "Modern Web Development"]
+    category: "Data & AI",
+    icon: BookOpen,
+    skills: ["Data Science", "Python for AI", "ML Fundamentals", "Generative AI"]
   }
 ];
 
@@ -42,8 +43,9 @@ const experience = [
     company: "CAPACITI | Gqeberha, Eastern Cape",
     period: "May 2025 - Present",
     achievements: [
-      "Gained practical experience building Python-based medias",
-      "Completed certified online courses in ML through Coursera, enhancing technical problem-solving skills and automation knowledge"
+      "Built Python-based media tools and applications",
+      "Completed ML courses via Coursera, enhancing technical problem-solving skills",
+      "Strengthened automation and problem-solving capabilities through hands-on experience"
     ]
   },
   {
@@ -51,9 +53,9 @@ const experience = [
     company: "Boston City College | East London, Eastern Cape", 
     period: "January 2024 - June 2024",
     achievements: [
-      "Assisted peers become familiar with online learning platforms, offering one-on-one guidance and troubleshooting assistance",
-      "Provided free academic support to fellow students assisting with coursework and study strategies",
-      "Fostered a supportive learning environment, improving digital literacy and academic confidence among students"
+      "Guided students on digital platforms with one-on-one support and tech troubleshooting",
+      "Provided academic support and study strategies to fellow students",
+      "Promoted digital literacy and confidence in collaborative learning environments"
     ]
   }
 ];
@@ -234,6 +236,8 @@ const About = () => {
             ))}
           </div>
         </div>
+
+        <CertificatesSection />
       </div>
     </div>
   );
