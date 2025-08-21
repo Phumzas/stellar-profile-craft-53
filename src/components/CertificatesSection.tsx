@@ -87,17 +87,13 @@ export const CertificatesSection = () => {
               </div>
             </CardHeader>
             <CardContent className="pt-0 text-center">
-              {cert.url ? (
+              {cert.url && (
                 <Button variant="outline" size="sm" asChild className="w-full hover-scale hover-glow rounded-full group-hover:bg-primary group-hover:text-primary-foreground">
                   <a href={cert.url} target="_blank" rel="noopener noreferrer">
                     <ExternalLink className="w-4 h-4 mr-2" />
                     View Certificate
                   </a>
                 </Button>
-              ) : (
-                <div className="text-sm text-muted-foreground italic">
-                  Certificate Available
-                </div>
               )}
             </CardContent>
           </Card>
