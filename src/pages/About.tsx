@@ -43,9 +43,8 @@ const experience = [
     company: "CAPACITI | Gqeberha, Eastern Cape",
     period: "May 2025 - Present",
     achievements: [
-      "Built Python-based media tools and applications",
-      "Completed ML courses via Coursera, enhancing technical problem-solving skills",
-      "Strengthened automation and problem-solving capabilities through hands-on experience"
+      "Participated in AI bootcamp, gaining hands-on experience in building and developing applications",
+      "Successfully completed the EC_Satelite_Hub_IT_Support_Cohort1, gaining new skills in IT Support and problem-solving"
     ]
   },
   {
